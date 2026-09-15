@@ -1,0 +1,35 @@
+#BlueJ class context
+#Mon Sep 14 22:53:47 ART 2026
+comment0.target=Laboratorio
+comment0.text=\r\n Clase Laboratorio que representa un laboratorio farmac\u00E9utico.\r\n Permite mostrar datos y modificar reglas de negocio como compra m\u00EDnima y d\u00EDa de entrega.\r\n \r\n @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) \r\n @version (a version number or a date)\r\n
+comment1.params=p_nombre p_domicilio p_telefono p_compraMin p_diaEnt
+comment1.target=Laboratorio(java.lang.String, java.lang.String, java.lang.String, int, int)
+comment1.text=Constructor completo
+comment10.target=java.lang.String getTelefono()
+comment11.target=int getCompraMinima()
+comment12.target=int getDiaEntrega()
+comment13.params=p_compraMin
+comment13.target=void nuevaCompraMinima(int)
+comment13.text=M\u00E9todos de negocio
+comment14.params=p_diaEnt
+comment14.target=void nuevoDiaEntrega(int)
+comment15.target=java.lang.String mostrar()
+comment15.text=\r\n Devuelve los datos del laboratorio.\r\n\r\n @return nombre, domicilio y tel\u00E9fono del laboratorio\r\n
+comment2.params=p_nombre p_domicilio p_telefono
+comment2.target=Laboratorio(java.lang.String, java.lang.String, java.lang.String)
+comment2.text=Constructor sobrecargado
+comment3.params=p_nombre
+comment3.target=void setNombre(java.lang.String)
+comment3.text=Setters privados
+comment4.params=p_domicilio
+comment4.target=void setDomicilio(java.lang.String)
+comment5.params=p_telefono
+comment5.target=void setTelefono(java.lang.String)
+comment6.params=p_compraMin
+comment6.target=void setCompraMinima(int)
+comment7.params=p_diaEnt
+comment7.target=void setDiaEntrega(int)
+comment8.target=java.lang.String getNombre()
+comment8.text=Getters
+comment9.target=java.lang.String getDomicilio()
+numComments=16

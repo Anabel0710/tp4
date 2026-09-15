@@ -1,0 +1,8 @@
+#BlueJ class context
+#Mon Sep 14 22:53:47 ART 2026
+comment0.target=TomaPedido
+comment0.text=\r\n Clase ejecutable que permite cargar un pedido por teclado.\r\n Crea un cliente, un laboratorio y los productos solicitados.\r\n Luego muestra los totales, elimina una unidad y presenta\r\n el detalle actualizado del pedido.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment1.text=\r\n M\u00E9todo principal de la aplicaci\u00F3n.\r\n\r\n @param args argumentos recibidos por l\u00EDnea de comandos\r\n
+numComments=2

@@ -1,0 +1,31 @@
+#BlueJ class context
+#Mon Sep 14 23:48:59 ART 2026
+comment0.target=CuentaBancaria
+comment0.text=\r\n Representa una cuenta bancaria perteneciente a una persona.\r\n Permite depositar y extraer dinero, consultar el saldo y mostrar\r\n la informaci\u00F3n de la cuenta y de su titular.\r\n\r\n La clase CuentaBancaria conoce a un objeto Persona mediante\r\n una variable de instancia llamada titular.\r\n \r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 23/08/2026\r\n
+comment1.params=p_nroCuenta p_titular
+comment1.target=CuentaBancaria(int, Persona)
+comment1.text=\r\n Construye una cuenta bancaria sin saldo inicial.\r\n El saldo de la cuenta se inicializa en cero.\r\n\r\n @param p_nroCuenta n\u00FAmero identificador de la cuenta\r\n @param p_titular persona titular de la cuenta\r\n
+comment10.params=p_importe
+comment10.target=double extraer(double)
+comment10.text=\ Extrae dinero cuando el importe es positivo y existe \r\n saldo suficiente. \r\n \r\n @param p_importe importe que se desea extraer \r\n @return saldo resultante\r\n
+comment11.target=void mostrar()
+comment11.text=\r\n Muestra los datos de la cuenta bancaria y de su titular.\r\n
+comment12.target=java.lang.String toString()
+comment2.params=p_nroCuenta p_titular p_saldo
+comment2.target=CuentaBancaria(int, Persona, double)
+comment2.text=\r\n Construye una cuenta bancaria con un saldo inicial.\r\n\r\n @param p_nroCuenta n\u00FAmero identificador de la cuenta\r\n @param p_titular persona titular de la cuenta\r\n @param p_saldo saldo inicial de la cuenta\r\n
+comment3.params=p_nroCuenta
+comment3.target=void setNroCuenta(int)
+comment3.text=Setters
+comment4.params=p_titular
+comment4.target=void setTitular(Persona)
+comment5.params=p_saldo
+comment5.target=void setSaldo(double)
+comment6.target=int getNroCuenta()
+comment6.text=Getters
+comment7.target=Persona getTitular()
+comment8.target=double getSaldo()
+comment9.params=p_importe
+comment9.target=double depositar(double)
+comment9.text=\r\n Incrementa el saldo actual con el importe recibido.\r\n\r\n @param p_importe importe que se depositar\u00E1\r\n @return saldo resultante despu\u00E9s del dep\u00F3sito\r\n
+numComments=13

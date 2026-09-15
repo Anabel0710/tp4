@@ -1,0 +1,33 @@
+#BlueJ class context
+#Mon Sep 14 21:47:53 ART 2026
+comment0.target=Alumno
+comment0.text=\r\n Clase Alumno que representa un estudiante con dos notas.\r\n Permite calcular promedio, verificar si aprueba y mostrar sus datos.\r\n \r\n @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) \r\n @version 1.0\r\n
+comment1.params=p_lu p_nombre p_apellido
+comment1.target=Alumno(int, java.lang.String, java.lang.String)
+comment1.text=Constructor\: inicializa notas en cero
+comment10.params=p_nota
+comment10.target=void setNota1(double)
+comment11.params=p_nota
+comment11.target=void setNota2(double)
+comment12.target=double promedio()
+comment12.text=Calcula el promedio de notas
+comment13.target=boolean aprueba()
+comment13.text=Verifica si aprueba seg\u00FAn reglas
+comment14.target=java.lang.String leyendaAprueba()
+comment14.text=Devuelve leyenda APROBADO o DESAPROBADO
+comment15.target=void mostrar()
+comment15.text=Muestra los datos del alumno
+comment2.target=int getLu()
+comment2.text=Getters
+comment3.target=java.lang.String getNombre()
+comment4.target=java.lang.String getApellido()
+comment5.target=double getNota1()
+comment6.target=double getNota2()
+comment7.params=p_lu
+comment7.target=void setLu(int)
+comment7.text=Setters privados
+comment8.params=p_nombre
+comment8.target=void setNombre(java.lang.String)
+comment9.params=p_apellido
+comment9.target=void setApellido(java.lang.String)
+numComments=16

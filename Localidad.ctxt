@@ -1,0 +1,18 @@
+#BlueJ class context
+#Sun Sep 13 21:21:11 ART 2026
+comment0.target=Localidad
+comment0.text=\r\n Representa una localidad perteneciente a una provincia.\r\n Permite obtener sus datos en una cadena de texto.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 23/08/2026\r\n
+comment1.params=p_nombre p_provincia
+comment1.target=Localidad(java.lang.String, java.lang.String)
+comment1.text=\r\n Construye una localidad con su nombre y provincia.\r\n\r\n @param p_nombre nombre de la localidad\r\n @param p_provincia nombre de la provincia\r\n
+comment2.target=java.lang.String getNombre()
+comment2.text=Getters
+comment3.target=java.lang.String getProvincia()
+comment4.params=p_nombre
+comment4.target=void setNombre(java.lang.String)
+comment4.text=Setters
+comment5.params=p_provincia
+comment5.target=void setProvincia(java.lang.String)
+comment6.target=java.lang.String mostrar()
+comment6.text=\r\n Devuelve el nombre de la localidad y su provincia.\r\n\r\n @return datos de la localidad y de la provincia\r\n
+numComments=7

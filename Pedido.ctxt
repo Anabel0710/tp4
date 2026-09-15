@@ -1,0 +1,33 @@
+#BlueJ class context
+#Mon Sep 14 22:53:47 ART 2026
+comment0.target=Pedido
+comment0.text=\r\n Write a description of class Pedido here.\r\n \r\n @author (your name) \r\n @version (a version number or a date)\r\n
+comment1.params=p_fecha p_cliente p_productos
+comment1.target=Pedido(java.util.Calendar, Cliente, java.util.ArrayList)
+comment1.text=Constructor que recibe una coleccion de productos
+comment10.params=p_producto
+comment10.target=boolean quitarProducto(Producto)
+comment10.text=\r\n Quita una unidad de un producto del pedido.\r\n No permite que la colecci\u00F3n quede vac\u00EDa.\r\n\r\n @param p_producto producto que se desea quitar\r\n @return true si se elimin\u00F3; false en caso contrario\r\n
+comment11.target=double totalAlContado()
+comment11.text=Suma los precios de contado
+comment12.target=double totalFinanciado()
+comment12.text=Suma los precios de lista
+comment13.target=void mostrarPedido()
+comment13.text=Muestra los detalles del pedido
+comment2.params=p_fecha p_cliente p_producto
+comment2.target=Pedido(java.util.Calendar, Cliente, Producto)
+comment2.text=Constructor que recibe el primer producto
+comment3.params=p_fecha
+comment3.target=void setFecha(java.util.Calendar)
+comment3.text=Setters
+comment4.params=p_cliente
+comment4.target=void setCliente(Cliente)
+comment5.params=p_productos
+comment5.target=void setProductos(java.util.ArrayList)
+comment6.target=java.util.Calendar getFecha()
+comment7.target=Cliente getCliente()
+comment8.target=java.util.ArrayList getProductos()
+comment9.params=p_producto
+comment9.target=boolean agregarProducto(Producto)
+comment9.text=Agregar producto al final del pedido
+numComments=14

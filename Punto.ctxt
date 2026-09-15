@@ -1,0 +1,28 @@
+#BlueJ class context
+#Mon Aug 31 12:02:52 ART 2026
+comment0.target=Punto
+comment0.text=\r\n Clase Punto que representa un punto en el plano cartesiano.\r\n Permite desplazarlo y mostrar sus coordenadas.\r\n \r\n @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) \r\n @version 1.0\r\n
+comment1.target=Punto()
+comment1.text=Constructor sin par\u00E1metros\: punto en el origen
+comment10.target=void mostrar()
+comment10.text=Muestra las coordenadas del punto
+comment2.params=p_x p_y
+comment2.target=Punto(double, double)
+comment2.text=Constructor con par\u00E1metros
+comment3.target=double getX()
+comment3.text=Getters
+comment4.target=double getY()
+comment5.params=p_x
+comment5.target=void setX(double)
+comment5.text=Setters privados
+comment6.params=p_y
+comment6.target=void setY(double)
+comment7.params=p_ptoDistante
+comment7.target=double distanciaA(Punto)
+comment7.text=DistanciaA
+comment8.params=p_dx p_dy
+comment8.target=void desplazar(double, double)
+comment8.text=Desplaza el punto
+comment9.target=java.lang.String coordenadas()
+comment9.text=Devuelve coordenadas en formato (x, y)
+numComments=11

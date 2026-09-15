@@ -1,0 +1,36 @@
+#BlueJ class context
+#Mon Sep 14 23:57:01 ART 2026
+comment0.target=Comercio
+comment0.text=\r\n Representa un comercio que administra una colecci\u00F3n\r\n de empleados.\r\n\r\n Cada empleado se almacena en un HashMap utilizando\r\n su n\u00FAmero de CUIL como clave.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_nombre
+comment1.target=Comercio(java.lang.String)
+comment1.text=\r\n Construye un comercio sin empleados.\r\n\r\n La colecci\u00F3n comienza vac\u00EDa porque la cardinalidad\r\n entre Comercio y Empleado es 0..*.\r\n\r\n @param p_nombre nombre del comercio\r\n
+comment10.params=p_cuil
+comment10.target=boolean esEmpleado(long)
+comment10.text=\r\n Verifica si un empleado pertenece al comercio.\r\n\r\n @param p_cuil CUIL que se desea consultar\r\n @return true si el CUIL est\u00E1 registrado\r\n
+comment11.params=p_cuil
+comment11.target=Empleado buscarEmpleado(long)
+comment11.text=\r\n Busca un empleado mediante su CUIL.\r\n\r\n @param p_cuil CUIL buscado\r\n @return empleado encontrado o null\r\n
+comment12.params=p_cuil
+comment12.target=void sueldoNeto(long)
+comment12.text=\r\n Muestra el sueldo neto del empleado correspondiente\r\n al CUIL recibido.\r\n\r\n @param p_cuil CUIL del empleado\r\n
+comment13.target=void nomina()
+comment13.text=\r\n Muestra la n\u00F3mina completa de empleados.\r\n
+comment2.params=p_nombre p_empleados
+comment2.target=Comercio(java.lang.String, java.util.HashMap)
+comment2.text=\r\n Construye un comercio con una colecci\u00F3n de empleados.\r\n\r\n @param p_nombre nombre del comercio\r\n @param p_empleados colecci\u00F3n inicial de empleados\r\n
+comment3.target=java.lang.String getNombre()
+comment4.target=java.util.HashMap getEmpleados()
+comment5.params=p_nombre
+comment5.target=void setNombre(java.lang.String)
+comment6.params=p_empleados
+comment6.target=void setEmpleados(java.util.HashMap)
+comment7.params=p_empleado
+comment7.target=void altaEmpleado(Empleado)
+comment7.text=\r\n Da de alta un empleado utilizando su CUIL como clave.\r\n\r\n Si ya existe un empleado con el mismo CUIL,\r\n no vuelve a agregarlo.\r\n\r\n @param p_empleado empleado que ser\u00E1 contratado\r\n
+comment8.params=p_cuil
+comment8.target=Empleado bajaEmpleado(long)
+comment8.text=\r\n Da de baja un empleado mediante su CUIL.\r\n\r\n @param p_cuil CUIL del empleado\r\n @return empleado eliminado o null si no existe\r\n
+comment9.target=int cantidadDeEmpleados()
+comment9.text=\r\n Devuelve la cantidad de empleados registrados.\r\n\r\n @return cantidad de empleados\r\n
+numComments=14
