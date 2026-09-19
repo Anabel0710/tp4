@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Sep 14 23:57:01 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=GestionComercio
 comment0.text=\r\n Clase ejecutable que administra los empleados de un\r\n comercio mediante un men\u00FA.\r\n\r\n Permite contratar y despedir empleados, buscar por CUIL,\r\n consultar el sueldo neto y emitir la n\u00F3mina.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
 comment1.params=args

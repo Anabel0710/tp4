@@ -201,7 +201,7 @@ public class Empleado
      *
      * @return true si hoy es su aniversario; false en caso contrario
      */
-    public boolean esAniversario()
+    public boolean esAniversario()  
     {
         Calendar fechaHoy = new GregorianCalendar();
 

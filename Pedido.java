@@ -1,10 +1,13 @@
 import java.util.ArrayList;
 import java.util.Calendar;
 /**
- * Write a description of class Pedido here.
+ * Representa un pedido realizado por un cliente.
+ * Almacena la fecha del pedido y una colección de productos.
+ * Permite agregar y quitar productos, calcular los totales
+ * y mostrar el detalle completo del pedido.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) 
+ * @version 1.0
  */
 public class Pedido
 {
@@ -12,14 +15,26 @@ public class Pedido
     private Cliente cliente;
     private ArrayList<Producto> productos;
     
-    /**Constructor que recibe una coleccion de productos*/
+    /**
+     * Constructor que crea un pedido a partir de una colección de productos.
+     *
+     * @param p_fecha fecha en la que se realiza el pedido
+     * @param p_cliente cliente que realiza el pedido
+     * @param p_productos colección de productos incluidos en el pedido
+     */
     public Pedido(Calendar p_fecha,Cliente p_cliente, ArrayList<Producto> p_productos ){
         this.setFecha(p_fecha);
         this.setCliente(p_cliente);
         this.setProductos(p_productos);
     }
     
-    /**Constructor que recibe el primer producto*/
+    /**
+     * Constructor que crea un pedido con su primer producto.
+     *
+     * @param p_fecha fecha en la que se realiza el pedido
+     * @param p_cliente cliente que realiza el pedido
+     * @param p_producto primer producto que se agrega al pedido
+     */
     public Pedido(Calendar p_fecha,Cliente p_cliente, Producto p_producto ){
         this.setFecha(p_fecha);
         this.setCliente(p_cliente);
@@ -34,9 +49,19 @@ public class Pedido
     
     public Calendar getFecha(){ return this.fecha;}
     public Cliente getCliente(){ return this.cliente;}
+    /**
+     * Devuelve la colección de productos del pedido.
+     *
+     * @return productos incluidos en el pedido
+     */
     public ArrayList<Producto> getProductos(){ return this.productos;}
     
-    /**Agregar producto al final del pedido*/
+     /**
+     * Agrega un producto al final de la colección del pedido.
+     *
+     * @param p_producto producto que se desea agregar
+     * @return true si el producto fue agregado correctamente
+     */
     
     public boolean agregarProducto(Producto p_producto){
         return this.getProductos().add(p_producto);
@@ -59,9 +84,13 @@ public class Pedido
         return false;
     }
     
-    
-    
-    /**Suma los precios de contado*/
+    /**
+     * Calcula la suma de los precios de contado
+     * de todos los productos del pedido.
+     *
+     * @return importe total del pedido al contado
+     */
+
     public double totalAlContado(){
         double total = 0;
         for(Producto p : this.getProductos()){
@@ -70,7 +99,12 @@ public class Pedido
         return total;
      }
     
-    /**Suma los precios de lista */
+    /**
+     * Calcula la suma de los precios de lista
+     * de todos los productos del pedido.
+     *
+     * @return importe total financiado del pedido
+     */
     public double totalFinanciado(){
         double total = 0;
         for(Producto p : this.getProductos()){
@@ -79,7 +113,10 @@ public class Pedido
         return total;
     }
     
-    /**Muestra los detalles del pedido */
+    /**
+     * Muestra la fecha, los productos, los precios de lista,
+     * los precios de contado y los totales del pedido.
+     */
     public void mostrarPedido(){
         int dia = this.getFecha().get(Calendar.DAY_OF_MONTH);
         int mes = this.getFecha().get(Calendar.MONTH) + 1;

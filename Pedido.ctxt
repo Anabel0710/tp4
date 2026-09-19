@@ -1,22 +1,22 @@
 #BlueJ class context
-#Mon Sep 14 22:53:47 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Pedido
-comment0.text=\r\n Write a description of class Pedido here.\r\n \r\n @author (your name) \r\n @version (a version number or a date)\r\n
+comment0.text=\r\n Representa un pedido realizado por un cliente.\r\n Almacena la fecha del pedido y una colecci\u00F3n de productos.\r\n Permite agregar y quitar productos, calcular los totales\r\n y mostrar el detalle completo del pedido.\r\n \r\n @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) \r\n @version 1.0\r\n
 comment1.params=p_fecha p_cliente p_productos
 comment1.target=Pedido(java.util.Calendar, Cliente, java.util.ArrayList)
-comment1.text=Constructor que recibe una coleccion de productos
+comment1.text=\r\n Constructor que crea un pedido a partir de una colecci\u00F3n de productos.\r\n\r\n @param p_fecha fecha en la que se realiza el pedido\r\n @param p_cliente cliente que realiza el pedido\r\n @param p_productos colecci\u00F3n de productos incluidos en el pedido\r\n
 comment10.params=p_producto
 comment10.target=boolean quitarProducto(Producto)
 comment10.text=\r\n Quita una unidad de un producto del pedido.\r\n No permite que la colecci\u00F3n quede vac\u00EDa.\r\n\r\n @param p_producto producto que se desea quitar\r\n @return true si se elimin\u00F3; false en caso contrario\r\n
 comment11.target=double totalAlContado()
-comment11.text=Suma los precios de contado
+comment11.text=\r\n Calcula la suma de los precios de contado\r\n de todos los productos del pedido.\r\n\r\n @return importe total del pedido al contado\r\n
 comment12.target=double totalFinanciado()
-comment12.text=Suma los precios de lista
+comment12.text=\r\n Calcula la suma de los precios de lista\r\n de todos los productos del pedido.\r\n\r\n @return importe total financiado del pedido\r\n
 comment13.target=void mostrarPedido()
-comment13.text=Muestra los detalles del pedido
+comment13.text=\r\n Muestra la fecha, los productos, los precios de lista,\r\n los precios de contado y los totales del pedido.\r\n
 comment2.params=p_fecha p_cliente p_producto
 comment2.target=Pedido(java.util.Calendar, Cliente, Producto)
-comment2.text=Constructor que recibe el primer producto
+comment2.text=\r\n Constructor que crea un pedido con su primer producto.\r\n\r\n @param p_fecha fecha en la que se realiza el pedido\r\n @param p_cliente cliente que realiza el pedido\r\n @param p_producto primer producto que se agrega al pedido\r\n
 comment3.params=p_fecha
 comment3.target=void setFecha(java.util.Calendar)
 comment3.text=Setters
@@ -27,7 +27,8 @@ comment5.target=void setProductos(java.util.ArrayList)
 comment6.target=java.util.Calendar getFecha()
 comment7.target=Cliente getCliente()
 comment8.target=java.util.ArrayList getProductos()
+comment8.text=\r\n Devuelve la colecci\u00F3n de productos del pedido.\r\n\r\n @return productos incluidos en el pedido\r\n
 comment9.params=p_producto
 comment9.target=boolean agregarProducto(Producto)
-comment9.text=Agregar producto al final del pedido
+comment9.text=\r\n Agrega un producto al final de la colecci\u00F3n del pedido.\r\n\r\n @param p_producto producto que se desea agregar\r\n @return true si el producto fue agregado correctamente\r\n
 numComments=14

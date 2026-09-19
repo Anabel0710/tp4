@@ -120,7 +120,7 @@ public class Persona
     /**
      * Determina si la fecha actual coincide con el día y el
      * mes de nacimiento de la persona.
-     *
+     * 
      * @return true si hoy es su cumpleaños; false en caso contrario
      */
     public boolean esCumpleaños()

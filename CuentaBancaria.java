@@ -100,10 +100,17 @@ public class CuentaBancaria
         System.out.println("- Cuenta Bancaria -");
         System.out.println(
             "Titular: " + this.getTitular().nomYApe()
-            + " (" + this.getTitular().edad() + " años)");
+            + " (" + this.getTitular().edad() + " años)"); 
         System.out.println("Saldo: " + this.getSaldo());
     }
     
+     /**
+     * Devuelve una representación textual de la cuenta bancaria.
+     * Los datos se muestran separados mediante tabulaciones.
+     *
+     * @return cadena con el número de cuenta, el nombre completo
+     *         del titular y el saldo
+     */
       @Override
     public String toString(){
         return this.getNroCuenta() + "\t" + this.getTitular().nomYApe() + "\t" + this.getSaldo();

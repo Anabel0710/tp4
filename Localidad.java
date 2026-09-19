@@ -33,7 +33,7 @@ public class Localidad
     /**
      * Devuelve el nombre de la localidad y su provincia.
      *
-     * @return datos de la localidad y de la provincia
+     * @return datos de la localidad y de la provincia 
      */
     public String mostrar()
     {

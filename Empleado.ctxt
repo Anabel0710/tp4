@@ -1,5 +1,5 @@
 #BlueJ class context
-#Sun Sep 13 20:57:33 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Empleado
 comment0.text=\r\n Representa a un empleado de una empresa.\r\n Permite calcular su antig\u00FCedad, adicional, descuento,\r\n sueldo neto y determinar si cumple un nuevo aniversario\r\n dentro de la empresa.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 - 23/08/2026\r\n
 comment1.params=p_cuil p_apellido p_nombre p_importe p_anio

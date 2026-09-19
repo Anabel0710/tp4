@@ -16,7 +16,18 @@ public class Producto {
     private int existMinima;
     private Laboratorio laboratorio;
 
-    /** Constructor completo */
+    /**
+     * Constructor que crea un producto con todos sus datos.
+     * El stock inicial del producto se establece en cero.
+     *
+     * @param p_codigo código identificador del producto
+     * @param p_rubro rubro al que pertenece el producto
+     * @param p_desc descripción del producto
+     * @param p_costo costo del producto
+     * @param p_porcPtoRepo porcentaje del punto de reposición
+     * @param p_existMinima existencia mínima requerida
+     * @param p_lab laboratorio que fabrica el producto
+     */
     public Producto(int p_codigo, String p_rubro, String p_desc, double p_costo, double p_porcPtoRepo, int p_existMinima, Laboratorio p_lab) {
         this.setCodigo(p_codigo);
         this.setRubro(p_rubro);
@@ -28,7 +39,17 @@ public class Producto {
         this.stock = 0; // stock inicial en cero
     }
 
-    /** Constructor sobrecargado */
+    /**
+     * Constructor sobrecargado que crea un producto con sus datos básicos.
+     * El stock, el porcentaje del punto de reposición y la existencia
+     * mínima se inicializan en cero.
+     *
+     * @param p_codigo código identificador del producto
+     * @param p_rubro rubro al que pertenece el producto
+     * @param p_desc descripción del producto
+     * @param p_costo costo del producto
+     * @param p_lab laboratorio que fabrica el producto
+     */
     public Producto(int p_codigo, String p_rubro, String p_desc, double p_costo, Laboratorio p_lab) {
         this.setCodigo(p_codigo);
         this.setRubro(p_rubro);
@@ -41,14 +62,8 @@ public class Producto {
     }
 
     /** Getters */
-    public int getCodigo() { 
-        return this.codigo; 
-    }
-    
-    public String getRubro() { 
-        return this.rubro;
-    }
-    
+    public int getCodigo() { return this.codigo; }
+    public String getRubro() { return this.rubro;}
     public String getDescripcion() { return this.descripcion; }
     public double getCosto() { return this.costo; }
     public int getStock() { return this.stock; }
@@ -84,12 +99,22 @@ public class Producto {
         this.laboratorio = p_lab; 
     }
 
-    /** Ajusta el stock (puede sumar o restar) */
+    /**
+     * Modifica el stock del producto.
+     * La cantidad puede ser positiva para aumentar el stock
+     * o negativa para disminuirlo.
+     *
+     * @param p_cantidad cantidad que se sumará o restará al stock
+     */
     public void ajuste(int p_cantidad) {
         this.stock += p_cantidad;
     }
 
-    /** Calcula el stock valorizado (stock * costo + 12%) */
+    /**
+     * Calcula el valor total del stock agregando un 12 %.
+     *
+     * @return valor total del stock disponible
+     */
     public double stockValorizado() {
         return (this.getStock() * this.getCosto()) * 1.12;
     }
@@ -114,17 +139,29 @@ public class Producto {
        return this.getCosto();
     }
 
-    /** Ajusta porcentaje de punto de reposición */
+    /**
+     * Modifica el porcentaje del punto de reposición.
+     *
+     * @param p_porce nuevo porcentaje del punto de reposición
+     */
     public void ajustarPtoRepo(double p_porce) {
         this.setPorcPtoRepo(p_porce);
     }
 
-    /** Ajusta existencia mínima */
+    /**
+     * Modifica la existencia mínima del producto.
+     *
+     * @param p_cantidad nueva cantidad mínima requerida
+     */
     public void ajustarExistMin(int p_cantidad) {
         this.setExistMinima(p_cantidad);
     }
 
-    /** Muestra datos completos del producto */
+    /**
+     * Muestra los datos completos del producto y del laboratorio,
+     * incluyendo el rubro, la descripción, el costo, el stock
+     * y el stock valorizado.
+     */
     public void mostrar() {
         System.out.println(this.getLaboratorio().mostrar());
         System.out.println("Rubro: " + this.getRubro());
@@ -133,7 +170,12 @@ public class Producto {
         System.out.println("Stock: " + this.getStock() + " - Stock Valorizado: $" + this.stockValorizado());
     }
 
-    /** Muestra datos en una sola línea */
+    /**
+     * Devuelve en una sola línea la descripción, el precio de lista
+     * y el precio de contado del producto.
+     *
+     * @return cadena con los datos resumidos del producto
+     */
     public String mostrarLinea() {
         return this.getDescripcion() + " " + this.precioLista() + " " + this.precioContado();
     }

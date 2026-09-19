@@ -85,7 +85,7 @@ public class Curso
      */
     public Alumno quitarAlumno(int p_lu)
     {
-        return this.getAlumnos().remove(p_lu);
+        return this.getAlumnos().remove(p_lu); 
     }
 
     /**

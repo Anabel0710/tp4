@@ -498,7 +498,7 @@ public class AplicacionBanco
         }
         else
         {
-            cuenta.extraer(importe);
+            cuenta.extraer(importe); 
 
             System.out.printf("Saldo actual: $%.2f%n",cuenta.getSaldo());
         }

@@ -1,10 +1,10 @@
 #BlueJ class context
-#Mon Sep 14 22:53:47 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Producto
 comment0.text=\r\n Clase Producto que representa un producto comercializado por una droguer\u00EDa.\r\n Contiene como colaborador un objeto Laboratorio.\r\n Permite calcular precios, ajustar stock y mostrar datos.\r\n \r\n @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) \r\n @version 1.0\r\n
 comment1.params=p_codigo p_rubro p_desc p_costo p_porcPtoRepo p_existMinima p_lab
 comment1.target=Producto(int, java.lang.String, java.lang.String, double, double, int, Laboratorio)
-comment1.text=Constructor completo
+comment1.text=\r\n Constructor que crea un producto con todos sus datos.\r\n El stock inicial del producto se establece en cero.\r\n\r\n @param p_codigo c\u00F3digo identificador del producto\r\n @param p_rubro rubro al que pertenece el producto\r\n @param p_desc descripci\u00F3n del producto\r\n @param p_costo costo del producto\r\n @param p_porcPtoRepo porcentaje del punto de reposici\u00F3n\r\n @param p_existMinima existencia m\u00EDnima requerida\r\n @param p_lab laboratorio que fabrica el producto\r\n
 comment10.target=Laboratorio getLaboratorio()
 comment11.params=p_codigo
 comment11.target=void setCodigo(int)
@@ -23,26 +23,26 @@ comment17.params=p_lab
 comment17.target=void setLaboratorio(Laboratorio)
 comment18.params=p_cantidad
 comment18.target=void ajuste(int)
-comment18.text=Ajusta el stock (puede sumar o restar)
+comment18.text=\r\n Modifica el stock del producto.\r\n La cantidad puede ser positiva para aumentar el stock\r\n o negativa para disminuirlo.\r\n\r\n @param p_cantidad cantidad que se sumar\u00E1 o restar\u00E1 al stock\r\n
 comment19.target=double stockValorizado()
-comment19.text=Calcula el stock valorizado (stock * costo + 12%)
+comment19.text=\r\n Calcula el valor total del stock agregando un 12 %.\r\n\r\n @return valor total del stock disponible\r\n
 comment2.params=p_codigo p_rubro p_desc p_costo p_lab
 comment2.target=Producto(int, java.lang.String, java.lang.String, double, Laboratorio)
-comment2.text=Constructor sobrecargado
+comment2.text=\r\n Constructor sobrecargado que crea un producto con sus datos b\u00E1sicos.\r\n El stock, el porcentaje del punto de reposici\u00F3n y la existencia\r\n m\u00EDnima se inicializan en cero.\r\n\r\n @param p_codigo c\u00F3digo identificador del producto\r\n @param p_rubro rubro al que pertenece el producto\r\n @param p_desc descripci\u00F3n del producto\r\n @param p_costo costo del producto\r\n @param p_lab laboratorio que fabrica el producto\r\n
 comment20.target=double precioLista()
 comment20.text=\r\n Calcula el precio de lista agregando un 10% al costo.\r\n\r\n @return precio de lista del producto\r\n
 comment21.target=double precioContado()
 comment21.text=\r\n Devuelve el precio de contado.\r\n El precio de contado es igual al costo del producto.\r\n\r\n @return precio de contado del producto\r\n
 comment22.params=p_porce
 comment22.target=void ajustarPtoRepo(double)
-comment22.text=Ajusta porcentaje de punto de reposici\u00F3n
+comment22.text=\r\n Modifica el porcentaje del punto de reposici\u00F3n.\r\n\r\n @param p_porce nuevo porcentaje del punto de reposici\u00F3n\r\n
 comment23.params=p_cantidad
 comment23.target=void ajustarExistMin(int)
-comment23.text=Ajusta existencia m\u00EDnima
+comment23.text=\r\n Modifica la existencia m\u00EDnima del producto.\r\n\r\n @param p_cantidad nueva cantidad m\u00EDnima requerida\r\n
 comment24.target=void mostrar()
-comment24.text=Muestra datos completos del producto
+comment24.text=\r\n Muestra los datos completos del producto y del laboratorio,\r\n incluyendo el rubro, la descripci\u00F3n, el costo, el stock\r\n y el stock valorizado.\r\n
 comment25.target=java.lang.String mostrarLinea()
-comment25.text=Muestra datos en una sola l\u00EDnea
+comment25.text=\r\n Devuelve en una sola l\u00EDnea la descripci\u00F3n, el precio de lista\r\n y el precio de contado del producto.\r\n\r\n @return cadena con los datos resumidos del producto\r\n
 comment3.target=int getCodigo()
 comment3.text=Getters
 comment4.target=java.lang.String getRubro()

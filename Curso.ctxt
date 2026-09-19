@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Sep 14 21:50:43 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Curso
 comment0.text=\r\n Clase que representa un curso y administra\r\n una colecci\u00F3n de alumnos inscriptos.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 12/09/2026\r\n
 comment1.params=p_nombre

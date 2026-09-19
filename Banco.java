@@ -83,29 +83,11 @@ public class Banco
         this.setCuentasBancarias(p_cuentas);
     }
 
-    /** Asigna el nombre del banco. */
-    private void setNombre(String p_nombre)
-    {
-        this.nombre = p_nombre;
-    }
-
-    /** Asigna el número de sucursal. */
-    private void setNroSucursal(int p_nroSucursal)
-    {
-        this.nroSucursal = p_nroSucursal;
-    }
-
-    /** Asigna la localidad del banco. */
-    private void setLocalidad(Localidad p_localidad)
-    {
-        this.localidad = p_localidad;
-    }
-
-    /** Asigna la colección de empleados. */
-    private void setEmpleados(ArrayList<Empleado> p_empleados)
-    {
-        this.empleados = p_empleados;
-    }
+    //setters
+    private void setNombre(String p_nombre) {this.nombre = p_nombre;}
+    private void setNroSucursal(int p_nroSucursal){ this.nroSucursal = p_nroSucursal;}
+    private void setLocalidad(Localidad p_localidad) { this.localidad = p_localidad;}
+    private void setEmpleados(ArrayList<Empleado> p_empleados) { this.empleados = p_empleados;}
 
     /** Asigna la colección de cuentas bancarias. */
     private void setCuentasBancarias(ArrayList<CuentaBancaria> p_cuentas)
@@ -113,23 +95,10 @@ public class Banco
         this.cuentasBancarias = p_cuentas;
     }
 
-    /** Devuelve el nombre del banco. */
-    public String getNombre()
-    {
-        return this.nombre;
-    }
-
-    /** Devuelve el número de sucursal. */
-    public int getNroSucursal()
-    {
-        return this.nroSucursal;
-    }
-
-    /** Devuelve la localidad del banco. */
-    public Localidad getLocalidad()
-    {
-        return this.localidad;
-    }
+    //getters
+    public String getNombre(){ return this.nombre;}
+    public int getNroSucursal(){ return this.nroSucursal;}
+    public Localidad getLocalidad(){return this.localidad;}
 
     /** Devuelve la colección de empleados. */
     public ArrayList<Empleado> getEmpleados()
@@ -291,19 +260,31 @@ public class Banco
     }
 
     /**
-     * Muestra las cuentas que tienen saldo igual a cero.
+      * Muestra las cuentas bancarias cuyo saldo es igual a cero.
+      *
+      * En este método cada elemento se recupera como Object para practicar
+      * el funcionamiento de las colecciones no genéricas. Por este motivo,
+      * antes de utilizar los métodos propios de CuentaBancaria, se realiza
+      * una conversión explícita de tipo (casting).
+      *
+      * Si la colección contiene un objeto que no pertenece a la clase
+      * CuentaBancaria, el casting producirá una ClassCastException.
      */
     public void listarCuentasConSaldoCero()
     {
         System.out.printf( "%-20s %-30s%n", "Cuenta",  "Apellido y Nombre");
 
         System.out.println( "---------------------------------------------------" );
-
-        for ( CuentaBancaria cuenta : this.getCuentasBancarias())
+        
+        // Cada elemento se recupera como Object.
+        for ( Object cuenta : this.getCuentasBancarias())
         {
-            if (cuenta.getSaldo() == 0)
+            // Se convierte el Object en CuentaBancaria para poder utilizar sus métodos específicos.
+            CuentaBancaria cuentaCasteada = (CuentaBancaria) cuenta;
+            // Se muestran solamente las cuentas cuyo saldo es cero.
+            if (cuentaCasteada.getSaldo() == 0)
             {
-                System.out.printf("%-20d %-30s%n", cuenta.getNroCuenta(), cuenta.getTitular().apeYNom());
+                System.out.printf("%-20d %-30s%n", cuentaCasteada.getNroCuenta(), cuentaCasteada.getTitular().apeYNom());
             }
         }
     }
@@ -316,8 +297,7 @@ public class Banco
      *
      * @return conjunto de titulares
      */
-    public HashSet<Persona> listaDeTitulares()
-    {
+    public HashSet<Persona> listaDeTitulares(){
         HashSet<Persona> titulares = new HashSet<Persona>();
 
         for (CuentaBancaria cuenta : this.getCuentasBancarias())

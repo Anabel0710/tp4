@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Sep 14 21:47:53 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Alumno
 comment0.text=\r\n Clase Alumno que representa un estudiante con dos notas.\r\n Permite calcular promedio, verificar si aprueba y mostrar sus datos.\r\n \r\n @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) \r\n @version 1.0\r\n
 comment1.params=p_lu p_nombre p_apellido

@@ -65,8 +65,7 @@ public class Carrera
 
         int luBaja = teclado.nextInt();
 
-        Alumno alumnoEliminado =
-            curso.quitarAlumno(luBaja);
+        Alumno alumnoEliminado = curso.quitarAlumno(luBaja);
 
         if (alumnoEliminado != null)
         {

@@ -1,5 +1,5 @@
 #BlueJ class context
-#Tue Sep 15 00:02:46 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=AplicacionBanco
 comment0.text=\r\n Clase ejecutable que permite administrar un banco mediante\r\n un men\u00FA de opciones.\r\n\r\n Permite contratar y despedir empleados, listar sueldos,\r\n agregar y quitar cuentas bancarias, realizar operaciones\r\n y mostrar el resumen general del banco.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
 comment1.params=args

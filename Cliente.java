@@ -12,7 +12,14 @@ public class Cliente {
     private String nombre;
     private double saldo;
 
-    /** Constructor de Cliente */
+     /**
+     * Constructor que crea un cliente con todos sus datos.
+     *
+     * @param p_dni número de DNI del cliente
+     * @param p_apellido apellido del cliente
+     * @param p_nombre nombre del cliente
+     * @param p_importe saldo inicial del cliente
+     */
     public Cliente(int p_dni, String p_apellido, String p_nombre, double p_importe) {
         this.setDNI(p_dni);
         this.setApellido(p_apellido);
@@ -32,29 +39,49 @@ public class Cliente {
     private void setNombre(String p_nombre) { this.nombre = p_nombre; }
     private void setSaldo(double p_importe) { this.saldo = p_importe; }
 
-    /** Agrega saldo al cliente */
+    /**
+     * Agrega un importe al saldo actual del cliente.
+     *
+     * @param p_importe importe que se agregará al saldo
+     * @return nuevo saldo del cliente
+     */
     public double agregaSaldo(double p_importe) {
         this.saldo += p_importe;
         return this.saldo;
     }
 
-    /** Reemplaza el saldo actual */
+    /**
+     * Reemplaza el saldo actual del cliente por un nuevo importe.
+     *
+     * @param p_importe nuevo saldo del cliente
+     * @return saldo actualizado
+     */
     public double nuevoSaldo(double p_importe) {
         this.saldo = p_importe;
         return this.saldo;
     }
 
-    /** Devuelve nombre y apellido */
+     /**
+     * Devuelve el nombre y el apellido del cliente.
+     *
+     * @return nombre y apellido del cliente
+     */
     public String nomYApe() { 
         return this.getNombre() + " " + this.getApellido(); 
     }
 
-    /** Devuelve apellido y nombre */
+    /**
+     * Devuelve el apellido y el nombre del cliente.
+     *
+     * @return apellido y nombre del cliente
+     */
     public String apeYNom() { 
         return this.getApellido() + ", " + this.getNombre(); 
     }
 
-    /** Muestra los datos del cliente */
+    /**
+     * Muestra el nombre, el apellido, el DNI y el saldo del cliente.
+     */
     public void mostrar() {
         System.out.println("Nombre y Apellido: " + this.nomYApe() + " (" + this.getDNI() + ")");
         System.out.println("Saldo: $" + this.getSaldo());

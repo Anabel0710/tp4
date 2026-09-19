@@ -29,7 +29,7 @@ public class Alumno {
     public double getNota2() { return this.nota2; }
 
     /** Setters privados */
-    private void setLu(int p_lu) { this.lu = p_lu; }
+    private void setLu(int p_lu) { this.lu = p_lu; } 
     private void setNombre(String p_nombre) { this.nombre = p_nombre; }
     private void setApellido(String p_apellido) { this.apellido = p_apellido; }
     public void setNota1(double p_nota) { this.nota1 = p_nota; }

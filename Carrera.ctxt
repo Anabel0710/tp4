@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Sep 14 21:50:43 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Carrera
 comment0.text=\r\n Clase ejecutable para administrar los alumnos de un curso\r\n mediante datos ingresados por consola.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 12/09/2026\r\n
 comment1.params=args

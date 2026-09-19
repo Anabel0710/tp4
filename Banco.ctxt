@@ -1,14 +1,12 @@
 #BlueJ class context
-#Tue Sep 15 00:02:46 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Banco
 comment0.text=\r\n Representa una entidad bancaria que posee empleados\r\n y cuentas bancarias.\r\n\r\n Permite administrar empleados, cuentas y titulares,\r\n adem\u00E1s de emitir una n\u00F3mina y un resumen de cuentas.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 - 13/09/2026\r\n
 comment1.params=p_nombre p_localidad p_nroSucursal p_empleado
 comment1.target=Banco(java.lang.String, Localidad, int, Empleado)
 comment1.text=\r\n Construye un banco con su primer empleado\r\n y sin cuentas bancarias.\r\n\r\n @param p_nombre nombre del banco\r\n @param p_localidad localidad del banco\r\n @param p_nroSucursal n\u00FAmero de sucursal\r\n @param p_empleado primer empleado\r\n
 comment10.target=int getNroSucursal()
-comment10.text=Devuelve el n\u00FAmero de sucursal.
 comment11.target=Localidad getLocalidad()
-comment11.text=Devuelve la localidad del banco.
 comment12.target=java.util.ArrayList getEmpleados()
 comment12.text=Devuelve la colecci\u00F3n de empleados.
 comment13.target=java.util.ArrayList getCuentasBancarias()
@@ -39,7 +37,7 @@ comment21.text=\r\n Cuenta las cuentas bancarias que tienen saldo\r\n mayor que 
 comment22.target=int cantidadCuentasSaldoCero()
 comment22.text=\r\n Cuenta las cuentas cuyo saldo es exactamente cero.\r\n\r\n @return cantidad de cuentas sin saldo\r\n
 comment23.target=void listarCuentasConSaldoCero()
-comment23.text=\r\n Muestra las cuentas que tienen saldo igual a cero.\r\n
+comment23.text=\r\n Muestra las cuentas bancarias cuyo saldo es igual a cero.\r\n\r\n En este m\u00E9todo cada elemento se recupera como Object para practicar\r\n el funcionamiento de las colecciones no gen\u00E9ricas. Por este motivo,\r\n antes de utilizar los m\u00E9todos propios de CuentaBancaria, se realiza\r\n una conversi\u00F3n expl\u00EDcita de tipo (casting).\r\n\r\n Si la colecci\u00F3n contiene un objeto que no pertenece a la clase\r\n CuentaBancaria, el casting producir\u00E1 una ClassCastException.\r\n
 comment24.target=java.util.HashSet listaDeTitulares()
 comment24.text=\r\n Obtiene una colecci\u00F3n sin titulares repetidos.\r\n\r\n HashSet impide que un mismo objeto Persona\r\n sea agregado m\u00E1s de una vez.\r\n\r\n @return conjunto de titulares\r\n
 comment25.target=void mostrarTitulares()
@@ -51,19 +49,14 @@ comment3.target=Banco(java.lang.String, Localidad, int, java.util.ArrayList, jav
 comment3.text=\r\n Construye un banco recibiendo sus empleados\r\n y sus cuentas bancarias.\r\n\r\n @param p_nombre nombre del banco\r\n @param p_localidad localidad del banco\r\n @param p_nroSucursal n\u00FAmero de sucursal\r\n @param p_empleados colecci\u00F3n de empleados\r\n @param p_cuentas colecci\u00F3n de cuentas bancarias\r\n
 comment4.params=p_nombre
 comment4.target=void setNombre(java.lang.String)
-comment4.text=Asigna el nombre del banco.
 comment5.params=p_nroSucursal
 comment5.target=void setNroSucursal(int)
-comment5.text=Asigna el n\u00FAmero de sucursal.
 comment6.params=p_localidad
 comment6.target=void setLocalidad(Localidad)
-comment6.text=Asigna la localidad del banco.
 comment7.params=p_empleados
 comment7.target=void setEmpleados(java.util.ArrayList)
-comment7.text=Asigna la colecci\u00F3n de empleados.
 comment8.params=p_cuentas
 comment8.target=void setCuentasBancarias(java.util.ArrayList)
 comment8.text=Asigna la colecci\u00F3n de cuentas bancarias.
 comment9.target=java.lang.String getNombre()
-comment9.text=Devuelve el nombre del banco.
 numComments=27

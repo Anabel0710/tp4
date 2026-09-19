@@ -1,5 +1,5 @@
 #BlueJ class context
-#Sun Sep 13 21:21:11 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=Localidad
 comment0.text=\r\n Representa una localidad perteneciente a una provincia.\r\n Permite obtener sus datos en una cadena de texto.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 23/08/2026\r\n
 comment1.params=p_nombre p_provincia
@@ -14,5 +14,5 @@ comment4.text=Setters
 comment5.params=p_provincia
 comment5.target=void setProvincia(java.lang.String)
 comment6.target=java.lang.String mostrar()
-comment6.text=\r\n Devuelve el nombre de la localidad y su provincia.\r\n\r\n @return datos de la localidad y de la provincia\r\n
+comment6.text=\r\n Devuelve el nombre de la localidad y su provincia.\r\n\r\n @return datos de la localidad y de la provincia \r\n
 numComments=7

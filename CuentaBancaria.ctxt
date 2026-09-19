@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Sep 14 23:48:59 ART 2026
+#Sat Sep 19 16:11:37 ART 2026
 comment0.target=CuentaBancaria
 comment0.text=\r\n Representa una cuenta bancaria perteneciente a una persona.\r\n Permite depositar y extraer dinero, consultar el saldo y mostrar\r\n la informaci\u00F3n de la cuenta y de su titular.\r\n\r\n La clase CuentaBancaria conoce a un objeto Persona mediante\r\n una variable de instancia llamada titular.\r\n \r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 23/08/2026\r\n
 comment1.params=p_nroCuenta p_titular
@@ -11,6 +11,7 @@ comment10.text=\ Extrae dinero cuando el importe es positivo y existe \r\n saldo
 comment11.target=void mostrar()
 comment11.text=\r\n Muestra los datos de la cuenta bancaria y de su titular.\r\n
 comment12.target=java.lang.String toString()
+comment12.text=\r\n Devuelve una representaci\u00F3n textual de la cuenta bancaria.\r\n Los datos se muestran separados mediante tabulaciones.\r\n\r\n @return cadena con el n\u00FAmero de cuenta, el nombre completo\r\n         del titular y el saldo\r\n
 comment2.params=p_nroCuenta p_titular p_saldo
 comment2.target=CuentaBancaria(int, Persona, double)
 comment2.text=\r\n Construye una cuenta bancaria con un saldo inicial.\r\n\r\n @param p_nroCuenta n\u00FAmero identificador de la cuenta\r\n @param p_titular persona titular de la cuenta\r\n @param p_saldo saldo inicial de la cuenta\r\n
